@@ -6,7 +6,7 @@ const getDebugger = require('./utils/getDebugger')
 const getJsonSize = require('./utils/getJsonSize')
 
 function register (remit, options = {}) {
-  if (!remit || !remit.version || !semver.satisfies(remit.version, '^2.0.0')) {
+  if (!remit) {
     throw new Error('Invalid remit version; must be ^2.0.0')
   }
 
