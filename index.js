@@ -11,7 +11,7 @@ function register (remit, options = {}) {
   }
 
   // influx setup
-  const influx = new Influx.InfuxDB({
+  const influx = new Influx.InfluxDB({
     username: options.username || process.env.INFLUX_USERNAME || 'root',
     password: options.password || process.env.INFLUX_PASSWORD || 'root',
     database: options.database || process.env.INFLUX_DATABASE || 'endpoints',
