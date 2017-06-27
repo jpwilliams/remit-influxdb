@@ -1,6 +1,6 @@
 const semver = require('semver')
 const Influx = require('influx')
-const prettyBytes = require('prettyBytes')
+const prettyBytes = require('pretty-bytes')
 const humanizeTime = require('tiny-human-time').short
 const getDebugger = require('./utils/getDebugger')
 const getJsonSize = require('./utils/getJsonSize')
